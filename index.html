@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de IMC</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   
+   <section>
+       <div class="wrapper">
+           <div class="colors">
+               <span class="yellow"></span>
+               <span class="green"></span>
+               <span class="orange"></span>
+               <span class="red"></span>
+               <span class="dark-red"></span>
+           </div>
+           
+           <h1>Calculadora de IMC <span> (Índice de massa corporal)</span></h1>
+           <h2>IMC significa Índice de Massa Corporal, e é uma medida que avalia o peso de uma pessoa em relação à sua altura. O IMC é calculado dividindo o peso da pessoa em quilogramas pela sua altura ao quadrado em metros.</h2>
+           
+           <div class="calculadora">
+               <form action="">
+                    <div>
+                        <label for="peso">Peso</label>
+                        <input type="text" id="peso" placeholder="Ex: 70" value="" required> 
+                        <p>kg</p>
+                    </div>
+                    <div>
+                        <label for="altura">Altura</label>
+                        <input type="text" id="altura" placeholder="Ex: 1.75" value="" required> 
+                        <p>cm</p>
+                    </div>
+                     <div class="btn-flex">
+                         <button class="btn disable">Calcular</button>
+                     </div>
+                </form>
+                
+                <div class="container_resultado" id="container_resultado">
+                    <div class="resultado">
+                        <p class="imc">Resultado: <span></span></p>
+                        <p class="referencia"></p>
+                    </div>
+                     
+                    <div class="resultado_text">
+                        <h3></h3>
+                    </div>
+                     
+                </div>
+           </div>
+           
+
+           <p class="legenda">
+            É importante notar que o IMC não leva em conta a composição corporal, como a quantidade de músculos ou gordura. Portanto, uma pessoa com muita massa muscular pode ter um IMC alto, mesmo estando saudável, enquanto uma pessoa com pouca massa muscular pode ter um IMC baixo, mesmo estando acima do peso.
+           </p>
+
+       </div>
+       
+       
+       <footer>
+            <p>By: Fernanda Mendes</p>
+        </footer>
+   </section>
+   
+   <script src="scripts.js"></script>
+   
+</body>
+</html>
